@@ -1,0 +1,42 @@
+.playerCard {
+    width: 200px;
+    left: -100px;
+    position: relative;
+    top: -65px;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 2px;
+    background: white;
+    box-shadow: 1px 1px 2px #bbb;
+}
+
+.active {
+    z-index: 2 !important;
+    opacity: 1 !important;
+}
+
+.name {
+    float: left;
+}
+
+.country {
+    float: left;
+}
+
+.age {
+    float: right;
+}
+
+.height {
+    float: left;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.active-unit {
+    color: white !important;
+    background: #3498db !important;
+}
