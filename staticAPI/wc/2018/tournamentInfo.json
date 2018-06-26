@@ -1,0 +1,404 @@
+{
+    "generated_at": "2018-06-21T01:31:26+00:00",
+    "schema": "http:\/\/schemas.sportradar.com\/bsa\/soccer\/v1\/json\/endpoints\/soccer\/tournament_info.json",
+    "tournament": {
+        "id": "sr:tournament:16",
+        "name": "World Cup",
+        "sport": {
+            "id": "sr:sport:1",
+            "name": "Soccer"
+        },
+        "category": {
+            "id": "sr:category:4",
+            "name": "International"
+        },
+        "current_season": {
+            "id": "sr:season:48238",
+            "name": "World Cup 2018",
+            "start_date": "2018-06-14",
+            "end_date": "2018-07-16",
+            "year": "2018"
+        }
+    },
+    "season": {
+        "id": "sr:season:48238",
+        "name": "World Cup 2018",
+        "start_date": "2018-06-14",
+        "end_date": "2018-07-16",
+        "year": "2018",
+        "tournament_id": "sr:tournament:16"
+    },
+    "round": {
+        "type": "group",
+        "number": 1
+    },
+    "season_coverage_info": {
+        "season_id": "sr:season:48238",
+        "scheduled": 48,
+        "played": 20,
+        "max_coverage_level": "platinum",
+        "max_covered": 20,
+        "min_coverage_level": "platinum"
+    },
+    "coverage_info": {
+        "live_coverage": true
+    },
+    "groups": [{
+        "name": "A",
+        "teams": [{
+            "id": "sr:competitor:4694",
+            "name": "Russia",
+            "country": "Russia",
+            "country_code": "RUS",
+            "abbreviation": "RUS"
+        }, {
+            "id": "sr:competitor:4725",
+            "name": "Uruguay",
+            "country": "Uruguay",
+            "country_code": "URY",
+            "abbreviation": "URU"
+        }, {
+            "id": "sr:competitor:4758",
+            "name": "Egypt",
+            "country": "Egypt",
+            "country_code": "EGY",
+            "abbreviation": "EGY"
+        }, {
+            "id": "sr:competitor:4834",
+            "name": "Saudi Arabia",
+            "country": "Saudi Arabia",
+            "country_code": "SAU",
+            "abbreviation": "KSA"
+        }]
+    }, {
+        "name": "B",
+        "teams": [{
+            "id": "sr:competitor:4704",
+            "name": "Portugal",
+            "country": "Portugal",
+            "country_code": "PRT",
+            "abbreviation": "POR"
+        }, {
+            "id": "sr:competitor:4698",
+            "name": "Spain",
+            "country": "Spain",
+            "country_code": "ESP",
+            "abbreviation": "ESP"
+        }, {
+            "id": "sr:competitor:4778",
+            "name": "Morocco",
+            "country": "Morocco",
+            "country_code": "MAR",
+            "abbreviation": "MAR"
+        }, {
+            "id": "sr:competitor:4766",
+            "name": "Iran",
+            "country": "Iran",
+            "country_code": "IRN",
+            "abbreviation": "IRI"
+        }]
+    }, {
+        "name": "C",
+        "teams": [{
+            "id": "sr:competitor:4476",
+            "name": "Denmark",
+            "country": "Denmark",
+            "country_code": "DNK",
+            "abbreviation": "DEN"
+        }, {
+            "id": "sr:competitor:4790",
+            "name": "Peru",
+            "country": "Peru",
+            "country_code": "PER",
+            "abbreviation": "PER"
+        }, {
+            "id": "sr:competitor:4741",
+            "name": "Australia",
+            "country": "Australia",
+            "country_code": "AUS",
+            "abbreviation": "AUS"
+        }, {
+            "id": "sr:competitor:4481",
+            "name": "France",
+            "country": "France",
+            "country_code": "FRA",
+            "abbreviation": "FRA"
+        }]
+    }, {
+        "name": "D",
+        "teams": [{
+            "id": "sr:competitor:4708",
+            "name": "Iceland",
+            "country": "Iceland",
+            "country_code": "ISL",
+            "abbreviation": "ISL"
+        }, {
+            "id": "sr:competitor:4819",
+            "name": "Argentina",
+            "country": "Argentina",
+            "country_code": "ARG",
+            "abbreviation": "ARG"
+        }, {
+            "id": "sr:competitor:4715",
+            "name": "Croatia",
+            "country": "Croatia",
+            "country_code": "HRV",
+            "abbreviation": "CRO"
+        }, {
+            "id": "sr:competitor:4785",
+            "name": "Nigeria",
+            "country": "Nigeria",
+            "country_code": "NGA",
+            "abbreviation": "NGR"
+        }]
+    }, {
+        "name": "E",
+        "teams": [{
+            "id": "sr:competitor:4699",
+            "name": "Switzerland",
+            "country": "Switzerland",
+            "country_code": "CHE",
+            "abbreviation": "SUI"
+        }, {
+            "id": "sr:competitor:6355",
+            "name": "Serbia",
+            "country": "Serbia",
+            "country_code": "SRB",
+            "abbreviation": "SRB"
+        }, {
+            "id": "sr:competitor:4748",
+            "name": "Brazil",
+            "country": "Brazil",
+            "country_code": "BRA",
+            "abbreviation": "BRA"
+        }, {
+            "id": "sr:competitor:4756",
+            "name": "Costa Rica",
+            "country": "Costa Rica",
+            "country_code": "CRI",
+            "abbreviation": "CRC"
+        }]
+    }, {
+        "name": "F",
+        "teams": [{
+            "id": "sr:competitor:4711",
+            "name": "Germany",
+            "country": "Germany",
+            "country_code": "DEU",
+            "abbreviation": "GER"
+        }, {
+            "id": "sr:competitor:4688",
+            "name": "Sweden",
+            "country": "Sweden",
+            "country_code": "SWE",
+            "abbreviation": "SWE"
+        }, {
+            "id": "sr:competitor:4781",
+            "name": "Mexico",
+            "country": "Mexico",
+            "country_code": "MEX",
+            "abbreviation": "MEX"
+        }, {
+            "id": "sr:competitor:4735",
+            "name": "Republic of Korea",
+            "country": "Republic of Korea",
+            "country_code": "KOR",
+            "abbreviation": "KOR"
+        }]
+    }, {
+        "name": "G",
+        "teams": [{
+            "id": "sr:competitor:4713",
+            "name": "England",
+            "country": "England",
+            "country_code": "ENG",
+            "abbreviation": "ENG"
+        }, {
+            "id": "sr:competitor:4717",
+            "name": "Belgium",
+            "country": "Belgium",
+            "country_code": "BEL",
+            "abbreviation": "BEL"
+        }, {
+            "id": "sr:competitor:4729",
+            "name": "Tunisia",
+            "country": "Tunisia",
+            "country_code": "TUN",
+            "abbreviation": "TUN"
+        }, {
+            "id": "sr:competitor:5164",
+            "name": "Panama",
+            "country": "Panama",
+            "country_code": "PAN",
+            "abbreviation": "PAN"
+        }]
+    }, {
+        "name": "H",
+        "teams": [{
+            "id": "sr:competitor:4703",
+            "name": "Poland",
+            "country": "Poland",
+            "country_code": "POL",
+            "abbreviation": "POL"
+        }, {
+            "id": "sr:competitor:4820",
+            "name": "Colombia",
+            "country": "Colombia",
+            "country_code": "COL",
+            "abbreviation": "COL"
+        }, {
+            "id": "sr:competitor:4770",
+            "name": "Japan",
+            "country": "Japan",
+            "country_code": "JPN",
+            "abbreviation": "JPN"
+        }, {
+            "id": "sr:competitor:4739",
+            "name": "Senegal",
+            "country": "Senegal",
+            "country_code": "SEN",
+            "abbreviation": "SEN"
+        }]
+    }],
+    "children": [{
+        "tournament": {
+            "id": "sr:tournament:11",
+            "name": "WC Qualification, UEFA",
+            "sport": {
+                "id": "sr:sport:1",
+                "name": "Soccer"
+            },
+            "category": {
+                "id": "sr:category:4",
+                "name": "International"
+            },
+            "current_season": {
+                "id": "sr:season:10876",
+                "name": "World Cup Qualification 2018",
+                "start_date": "2015-07-25",
+                "end_date": "2017-11-19",
+                "year": "2018"
+            }
+        }
+    }, {
+        "tournament": {
+            "id": "sr:tournament:13",
+            "name": "WC Qualification, CAF",
+            "sport": {
+                "id": "sr:sport:1",
+                "name": "Soccer"
+            },
+            "category": {
+                "id": "sr:category:4",
+                "name": "International"
+            },
+            "current_season": {
+                "id": "sr:season:10878",
+                "name": "World Cup Qualification 2018",
+                "start_date": "2015-07-25",
+                "end_date": "2017-11-15",
+                "year": "2018"
+            }
+        }
+    }, {
+        "tournament": {
+            "id": "sr:tournament:14",
+            "name": "WC Qual, CONCACAF",
+            "sport": {
+                "id": "sr:sport:1",
+                "name": "Soccer"
+            },
+            "category": {
+                "id": "sr:category:4",
+                "name": "International"
+            },
+            "current_season": {
+                "id": "sr:season:10080",
+                "name": "World Cup Qualif., CONCACAF 2018",
+                "start_date": "2015-03-20",
+                "end_date": "2017-10-16",
+                "year": "2018"
+            }
+        }
+    }, {
+        "tournament": {
+            "id": "sr:tournament:295",
+            "name": "WC Qual, CONMEBOL",
+            "sport": {
+                "id": "sr:sport:1",
+                "name": "Soccer"
+            },
+            "category": {
+                "id": "sr:category:4",
+                "name": "International"
+            },
+            "current_season": {
+                "id": "sr:season:10872",
+                "name": "World Cup Qualification 2018",
+                "start_date": "2015-07-25",
+                "end_date": "2017-10-16",
+                "year": "2018"
+            }
+        }
+    }, {
+        "tournament": {
+            "id": "sr:tournament:308",
+            "name": "WC Qualification, AFC",
+            "sport": {
+                "id": "sr:sport:1",
+                "name": "Soccer"
+            },
+            "category": {
+                "id": "sr:category:4",
+                "name": "International"
+            },
+            "current_season": {
+                "id": "sr:season:10060",
+                "name": "World Cup , AFC Qualification",
+                "start_date": "2015-03-11",
+                "end_date": "2017-10-11",
+                "year": "2018"
+            }
+        }
+    }, {
+        "tournament": {
+            "id": "sr:tournament:309",
+            "name": "WC Qualification, OFC",
+            "sport": {
+                "id": "sr:sport:1",
+                "name": "Soccer"
+            },
+            "category": {
+                "id": "sr:category:4",
+                "name": "International"
+            },
+            "current_season": {
+                "id": "sr:season:10874",
+                "name": "World Cup Qualification 2018",
+                "start_date": "2015-07-25",
+                "end_date": "2017-10-16",
+                "year": "2018"
+            }
+        }
+    }, {
+        "tournament": {
+            "id": "sr:tournament:20434",
+            "name": "World Cup Qualification, Inter-Confederation Playoffs",
+            "sport": {
+                "id": "sr:sport:1",
+                "name": "Soccer"
+            },
+            "category": {
+                "id": "sr:category:4",
+                "name": "International"
+            },
+            "current_season": {
+                "id": "sr:season:46540",
+                "name": "World Cup 2018, Inter-Confederation Playoffs",
+                "start_date": "2017-11-06",
+                "end_date": "2017-11-17",
+                "year": "2018"
+            }
+        }
+    }]
+}
