@@ -226,6 +226,26 @@ class Slider {
     }
 }
 
+class Title {
+    constructor(title) {
+        this.title = title;
+    }
+
+    render() {
+        let title = document.createElement('div');
+        title.textContent = this.title;
+        title.setAttribute('style',
+            `position: absolute;`
+            +`top: -50px;`
+            +`width: 100%;`
+            +`font-size: 18px;`
+            +`font-weight: bold;`
+        );
+
+        return title;
+    }
+}
+
 class Chart {
     constructor(width, height, xAxisArray) {
         this.width = width;
@@ -302,6 +322,7 @@ class Chart {
 
         container.appendChild(new UnitSwitcher().render());
         container.appendChild(new Slider().render());
+        container.appendChild(new Title("Distributions of height by position for each player in the 2018 FIFA World Cup").render());
 
         return container;
     }
