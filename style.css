@@ -40,3 +40,11 @@
     color: white !important;
     background: #3498db !important;
 }
+
+.slider-active {
+    background: black !important;
+}
+
+.slider-highlighted {
+    background: #888;
+}

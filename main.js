@@ -11,7 +11,15 @@ function getCountries() {
                         name: data.team.name,
                         group: data.statistics.seasons[data.statistics.seasons.length - 1].statistics.group_name,
                         color: data.jerseys[0].base,
-                        players: data.players
+                        players: data.players,
+                        stages: {
+                            'Groups': data.team.groups,
+                            '16': data.team['16'],
+                            '8': data.team['8'],
+                            '4': data.team['4'],
+                            '2': data.team['2'],
+                            'Winner': data.team.winner
+                        }
                     });
                 });
             })
@@ -20,10 +28,8 @@ function getCountries() {
             });
 };
 
-// create function to translate toggle height cm/ft
-
 class Point {
-    constructor(size, player, color, yMin, yMax, chartHeight) {
+    constructor(size, player, stages, color, yMin, yMax, chartHeight) {
         this.size = size;
         this.color = color;
         this.yMin = yMin;
@@ -37,6 +43,7 @@ class Point {
               feet = `${Math.floor(inches / 12)}'${(Math.floor(inches) % 12)}"`;
 
         this.playerHeightFT = feet;
+        this.stages = stages;
     }
 
     showPlayerInfo() {
@@ -93,13 +100,13 @@ class Point {
         if (this.card === undefined) {
             this.card = card;
             this.el.appendChild(this.card);
-            this.el.setAttribute('class', 'active');
+            this.el.classList.add('active');
         }
     }
 
     hidePlayerInfo() {
         if (this.card !== undefined) {
-            this.el.setAttribute('class', '');
+            this.el.classList.remove('active');
             this.el.removeChild(this.card);
             this.card = undefined;
         }
@@ -111,6 +118,7 @@ class Point {
               yPos = ((this.player.height - this.yMin) * multiplier) - (this.size / 2);
         let randomLeftPosition = parseFloat(Math.random() * 100).toFixed(2);
 
+        this.el.classList.add('player-point');
         this.el.setAttribute('style',
             `position:absolute;`
             +`width: ${this.size}px;`
@@ -124,6 +132,9 @@ class Point {
             +`border: 1px solid #ddd;`
             +`z-index: 1;`
         );
+
+        this.el.setAttribute('stages', JSON.stringify(this.stages));
+
         this.el.onmouseenter = () => this.showPlayerInfo();
         this.el.onmouseleave = () => this.hidePlayerInfo();
 
@@ -205,9 +216,37 @@ class UnitSwitcher {
     }
 }
 
+// TODO: Slider with Groups, 16, 8, 4, 2, Winner
+// Recalculate whisker and box when slider changes
 class Slider {
     constructor() {
+        this.sliderValues = ['Groups', '16', '8', '4', '2', 'Winner'];
+    }
 
+    sliderClick(e) {
+        let bubbles = document.getElementsByClassName('slider-bubble');
+        Array.from(bubbles).forEach((bubble) => {
+            if (parseInt(bubble.getAttribute('slider'), 0) <= parseInt(e.target.getAttribute('slider'), 0)) {
+                bubble.classList.add('slider-highlighted');
+            } else {
+                bubble.classList.remove('slider-highlighted');
+            }
+
+            if (bubble === e.target) {
+                bubble.classList.add('slider-active');
+            } else {
+                bubble.classList.remove('slider-active');
+            }
+        });
+
+        let playerPoints = document.getElementsByClassName('player-point');
+        Array.from(playerPoints).forEach((player) => {
+            if (!JSON.parse(player.getAttribute('stages'))[e.target.getAttribute('value')]) {
+                player.style.display = "none";
+            } else {
+                player.style.display = "block";
+            }
+        });
     }
 
     render() {
@@ -217,10 +256,48 @@ class Slider {
             `position: absolute;`
             +`width: 80%;`
             +`height: 1px;`
-            +`background: black;`
             +`bottom: -100px;`
             +`left: 8%;`
         );
+        
+        let bubble = document.createElement('div');
+        bubble.classList.add('slider-bubble');
+        bubble.setAttribute('style',
+            `width: 30px;`
+            +`height: 30px;`
+            +`border: 1px solid black;`
+            +`border-radius: 100%;`
+            +`top: -15px;`
+            +`position: absolute;`
+            +`cursor: pointer;`
+        );
+
+        for (let i = 0; i < this.sliderValues.length; i++) {
+            let _bubble = bubble.cloneNode();
+            _bubble.style.left = `${i * (100 / (this.sliderValues.length - 1))}%`;
+            _bubble.setAttribute('slider', i);
+            _bubble.setAttribute('value', this.sliderValues[i]);
+            
+            if (i === 0) {
+                _bubble.classList.add('slider-active');
+                _bubble.classList.add('slider-highlighted');
+            }
+
+            _bubble.onclick = (e) => this.sliderClick(e);
+            
+            let label = document.createElement('div');
+            label.textContent = this.sliderValues[i];
+            label.setAttribute('style',
+                `margin-left: -100%;`
+                +`margin-right: -100%;`
+                +`text-align: center;`
+                +`position: relative;`
+                +`bottom: -35px;`
+            );
+            _bubble.appendChild(label);
+
+            slider.appendChild(_bubble);
+        }
 
         return slider;
     }
@@ -514,6 +591,7 @@ class Column {
                 const point = new Point(
                     10,
                     player,
+                    country.stages,
                     country.color,
                     this.yMin,
                     this.yMax,
@@ -531,6 +609,7 @@ class Column {
 
 window.onload = async () => {
     state.countries = await getCountries();
+    console.log(state.countries)
 
     // 201
     state.maxPlayerHeight = state.countries.map((country) => {
