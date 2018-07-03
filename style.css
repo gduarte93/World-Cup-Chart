@@ -73,7 +73,22 @@
 }
 
 .chart {
-    margin-bottom: 140px;
+    margin-bottom: 160px;
+}
+
+#disclaimer {
+    font-size: 12px;
+    color: #a6a6a2;
+    text-align: center;
+}
+
+#disclaimer span {
+    position: relative;
+    left: 195px;
+}
+
+#disclaimer a {
+    color: #a6a6a2;
 }
 
 @media (max-width: 1040px) {
