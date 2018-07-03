@@ -218,7 +218,6 @@ class UnitSwitcher {
     }
 }
 
-// TODO: Recalculate whisker and box when slider changes
 class Slider {
     constructor() {
         this.sliderValues = ['Groups', '16', '8', '4', '2', 'Winner'];
