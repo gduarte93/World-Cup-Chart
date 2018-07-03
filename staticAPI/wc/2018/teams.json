@@ -17306,11 +17306,11 @@
         },
         "abbreviation": "SRB",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -19137,11 +19137,11 @@
         },
         "abbreviation": "CRC",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -20162,11 +20162,11 @@
         },
         "abbreviation": "GER",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -23860,11 +23860,11 @@
         },
         "abbreviation": "KOR",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -27273,11 +27273,11 @@
         },
         "abbreviation": "TUN",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -28235,11 +28235,11 @@
         },
         "abbreviation": "PAN",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -29073,11 +29073,11 @@
         },
         "abbreviation": "POL",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -32144,11 +32144,11 @@
         },
         "abbreviation": "SEN",
         "groups": true,
-        "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {

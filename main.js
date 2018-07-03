@@ -119,6 +119,7 @@ class Point {
         let randomLeftPosition = parseFloat(Math.random() * 100).toFixed(2);
 
         this.el.classList.add('player-point');
+        this.el.setAttribute('height', this.player.height);
         this.el.setAttribute('style',
             `position:absolute;`
             +`width: ${this.size}px;`
@@ -216,8 +217,7 @@ class UnitSwitcher {
     }
 }
 
-// TODO: Slider with Groups, 16, 8, 4, 2, Winner
-// Recalculate whisker and box when slider changes
+// TODO: Recalculate whisker and box when slider changes
 class Slider {
     constructor() {
         this.sliderValues = ['Groups', '16', '8', '4', '2', 'Winner'];
@@ -239,13 +239,28 @@ class Slider {
             }
         });
 
-        let playerPoints = document.getElementsByClassName('player-point');
+        const playerPoints = document.getElementsByClassName('player-point');
         Array.from(playerPoints).forEach((player) => {
             if (!JSON.parse(player.getAttribute('stages'))[e.target.getAttribute('value')]) {
                 player.style.display = "none";
             } else {
                 player.style.display = "block";
             }
+        });
+
+        let columns = document.getElementsByClassName('chart-column');
+
+        Array.from(columns).forEach((column) => {
+            let oldPlots = Array.from(column.childNodes).filter((node) => node.classList.contains('wb-plot'));
+            while(oldPlots.length) {
+                oldPlots[0].parentNode.removeChild(oldPlots[0]);
+                oldPlots.shift();
+            }
+            const playerHeights = Array.from(column.childNodes)
+                .filter((node) => node.classList.contains('player-point') && node.style.display !== 'none')
+                .map((node) => parseInt(node.getAttribute('height'), 10));
+
+            column.appendChild(new wbPlot(playerHeights, state.yMin, state.yMax, state.chartHeight).render());
         });
     }
 
@@ -328,6 +343,8 @@ class Chart {
         this.width = width;
         this.height = height;
         this.xAxisArray = xAxisArray;
+
+        state.chartHeight = this.height;
     }
 
     render() {
@@ -392,6 +409,9 @@ class Chart {
             yDash.appendChild(yLabel);
             yAxis.appendChild(yDash);
         }
+
+        state.yMin = this.yMin;
+        state.yMax = this.yMax;
 
         this.xAxisArray.forEach((name, index, self) => {
             container.appendChild(new Column(this.width/self.length, name, index, this.height, this.yMin, this.yMax).render());
@@ -531,6 +551,8 @@ class wbPlot {
             +'z-index: 0;'
         );
 
+        wbPlot.classList.add('wb-plot');
+
         return wbPlot;
     }
 }
@@ -550,6 +572,7 @@ class Column {
             margin = 50,
             isFirst = this.index === 0;
         column.setAttribute('name', this.name);
+        column.classList.add('chart-column');
         column.setAttribute('style',
             `margin-left: ${isFirst ? margin : 0}px;`
             +`margin-right: ${margin}px;`
@@ -600,7 +623,7 @@ class Column {
                 column.appendChild(point.render());
             });
         });
-        
+
         column.appendChild(new wbPlot(playerHeights, this.yMin, this.yMax, this.chartHeight).render());
 
         return column;
@@ -609,7 +632,6 @@ class Column {
 
 window.onload = async () => {
     state.countries = await getCountries();
-    console.log(state.countries)
 
     // 201
     state.maxPlayerHeight = state.countries.map((country) => {
