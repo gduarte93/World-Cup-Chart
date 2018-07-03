@@ -41,10 +41,44 @@
     background: #3498db !important;
 }
 
-.slider-active {
-    background: black !important;
+.slider-highlighted {
+    background-color: #3498db !important;
+    box-shadow: inset 0px 1px 1px #2776aa !important;
 }
 
-.slider-highlighted {
-    background: #888;
+.slider-highlighted:last-child {
+    background-color: #f1c40f !important;
+    box-shadow: inset 0px 1px 1px #c9a30c !important;
+}
+
+.slider-bubble:not(:first-child):before {
+    content: '';
+    width: 98px;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    top: 15px;
+    left: -98px;
+    box-shadow: inset 0px 1px 1px #aaa;
+}
+
+.slider-bubble:not(:first-child).slider-highlighted:before {
+    background: #3498db;
+    box-shadow: inset 0px 1px 1px #2776aa;
+}
+
+.slider-bubble:last-child.slider-highlighted:before {
+    box-shadow: inset 0px 1px 1px rgba(100, 100, 100, 0.4);
+    background: linear-gradient(90deg, #3498db, #f1c40f);
+}
+
+.chart {
+    margin-bottom: 140px;
+}
+
+@media (max-width: 1040px) {
+    .chart {
+        margin-left: 120px;
+        margin-right: 10px;
+    }
 }

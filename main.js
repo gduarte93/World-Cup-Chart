@@ -172,16 +172,17 @@ class UnitSwitcher {
 
         this.unitSwitchWrapper.setAttribute('style',
             `width: 100px;`
-            +`height: 40px;`
+            +`height: 30px;`
             +`position: absolute;`
-            +`bottom: -40px;`
-            +`left: -100px;`
+            +`bottom: -50px;`
+            +`left: -120px;`
             +`border: 1px solid #888;`
             +`box-sizing: border-box;`
             +`border-radius: 5px;`
-            +`line-height: 40px;`
+            +`line-height: 30px;`
             +`color: #888;`
             +`cursor: pointer;`
+            +`font-size: 14px;`
         );
 
         this.leftSwitch.setAttribute('style',
@@ -224,24 +225,20 @@ class Slider {
     }
 
     sliderClick(e) {
-        let bubbles = document.getElementsByClassName('slider-bubble');
+        let target = e.target.classList.contains('slider-bubble') ? e.target : e.target.parentNode,
+            bubbles = document.getElementsByClassName('slider-bubble');
+
         Array.from(bubbles).forEach((bubble) => {
-            if (parseInt(bubble.getAttribute('slider'), 0) <= parseInt(e.target.getAttribute('slider'), 0)) {
+            if (parseInt(bubble.getAttribute('slider'), 0) <= parseInt(target.getAttribute('slider'), 0)) {
                 bubble.classList.add('slider-highlighted');
             } else {
                 bubble.classList.remove('slider-highlighted');
-            }
-
-            if (bubble === e.target) {
-                bubble.classList.add('slider-active');
-            } else {
-                bubble.classList.remove('slider-active');
             }
         });
 
         const playerPoints = document.getElementsByClassName('player-point');
         Array.from(playerPoints).forEach((player) => {
-            if (!JSON.parse(player.getAttribute('stages'))[e.target.getAttribute('value')]) {
+            if (!JSON.parse(player.getAttribute('stages'))[target.getAttribute('value')]) {
                 player.style.display = "none";
             } else {
                 player.style.display = "block";
@@ -280,11 +277,12 @@ class Slider {
         bubble.setAttribute('style',
             `width: 30px;`
             +`height: 30px;`
-            +`border: 1px solid black;`
             +`border-radius: 100%;`
             +`top: -15px;`
             +`position: absolute;`
             +`cursor: pointer;`
+            +`background-color: #ddd;`
+            +`box-shadow: inset 1px 1px 2px #aaa;`
         );
 
         for (let i = 0; i < this.sliderValues.length; i++) {
@@ -294,7 +292,6 @@ class Slider {
             _bubble.setAttribute('value', this.sliderValues[i]);
             
             if (i === 0) {
-                _bubble.classList.add('slider-active');
                 _bubble.classList.add('slider-highlighted');
             }
 
@@ -349,6 +346,7 @@ class Chart {
 
     render() {
         let container = document.createElement('div');
+        container.classList.add('chart');
         container.setAttribute('style',
             `width:${this.width}px;`
             +`height:${this.height}px;`
