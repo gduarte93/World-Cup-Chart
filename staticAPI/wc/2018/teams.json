@@ -15,7 +15,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "RUS"
+        "abbreviation": "RUS",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -1035,7 +1041,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "URU"
+        "abbreviation": "URU",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -1857,7 +1869,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "EGY"
+        "abbreviation": "EGY",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -2589,7 +2607,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "KSA"
+        "abbreviation": "KSA",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -3488,7 +3512,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "POR"
+        "abbreviation": "POR",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -4850,7 +4880,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "ESP"
+        "abbreviation": "ESP",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -6215,7 +6251,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "MAR"
+        "abbreviation": "MAR",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -7080,7 +7122,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "IRI"
+        "abbreviation": "IRI",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -7948,7 +7996,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "DEN"
+        "abbreviation": "DEN",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -9155,7 +9209,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "PER"
+        "abbreviation": "PER",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -9887,7 +9947,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "AUS"
+        "abbreviation": "AUS",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -10815,7 +10881,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "FRA"
+        "abbreviation": "FRA",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -12177,7 +12249,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "ISL"
+        "abbreviation": "ISL",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -13096,7 +13174,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "ARG"
+        "abbreviation": "ARG",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -14114,7 +14198,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "CRO"
+        "abbreviation": "CRO",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -15101,7 +15191,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "NGR"
+        "abbreviation": "NGR",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -15970,7 +16066,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "SUI"
+        "abbreviation": "SUI",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -17202,7 +17304,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "SRB"
+        "abbreviation": "SRB",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -18006,7 +18114,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "BRA"
+        "abbreviation": "BRA",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -19021,7 +19135,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "CRC"
+        "abbreviation": "CRC",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -20040,7 +20160,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "GER"
+        "abbreviation": "GER",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -21219,7 +21345,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "SWE"
+        "abbreviation": "SWE",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -22483,7 +22615,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "MEX"
+        "abbreviation": "MEX",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -23720,7 +23858,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "KOR"
+        "abbreviation": "KOR",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -24649,7 +24793,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "ENG"
+        "abbreviation": "ENG",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -25975,7 +26125,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "BEL"
+        "abbreviation": "BEL",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -27115,7 +27271,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "TUN"
+        "abbreviation": "TUN",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -28071,7 +28233,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "PAN"
+        "abbreviation": "PAN",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -28903,7 +29071,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "POL"
+        "abbreviation": "POL",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -29984,7 +30158,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "COL"
+        "abbreviation": "COL",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -30785,7 +30965,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "JPN"
+        "abbreviation": "JPN",
+        "groups": true,
+        "16": true,
+        "8": true,
+        "4": true,
+        "2": true,
+        "winner": true
       },
       "jerseys": [
         {
@@ -31956,7 +32142,13 @@
           "id": "sr:category:4",
           "name": "International"
         },
-        "abbreviation": "SEN"
+        "abbreviation": "SEN",
+        "groups": true,
+        "16": false,
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
