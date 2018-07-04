@@ -3515,10 +3515,10 @@
         "abbreviation": "POR",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -4883,10 +4883,10 @@
         "abbreviation": "ESP",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -7999,10 +7999,10 @@
         "abbreviation": "DEN",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -13177,10 +13177,10 @@
         "abbreviation": "ARG",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -16069,10 +16069,10 @@
         "abbreviation": "SUI",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -22618,10 +22618,10 @@
         "abbreviation": "MEX",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -30161,10 +30161,10 @@
         "abbreviation": "COL",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
@@ -30968,10 +30968,10 @@
         "abbreviation": "JPN",
         "groups": true,
         "16": true,
-        "8": true,
-        "4": true,
-        "2": true,
-        "winner": true
+        "8": false,
+        "4": false,
+        "2": false,
+        "winner": false
       },
       "jerseys": [
         {
