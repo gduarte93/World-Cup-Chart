@@ -12,6 +12,7 @@ function getCountries() {
                         group: data.statistics.seasons[data.statistics.seasons.length - 1].statistics.group_name,
                         color: data.jerseys[0].base,
                         players: data.players,
+                        abbreviation: data.team.abbreviation,
                         stages: {
                             'Groups': data.team.groups,
                             '16': data.team['16'],
@@ -73,7 +74,7 @@ class Point {
         heightLabel.setAttribute('class', 'label');
 
         name.textContent = this.player.name;
-        country.textContent = this.player.country_code;
+        country.textContent = this.player.abbreviation;
         height.textContent = state.unit === 'cm' ? this.player.height : this.playerHeightFT;
         age.textContent = this.age;
         
@@ -605,6 +606,7 @@ class Column {
         let playerHeights = [];
         state.countries.forEach((country) => {
             country.players.filter((player) => {
+                player.abbreviation = country.abbreviation;
                 return player.type === this.name;
             }).forEach((player) => {
                 playerHeights.push(player.height);
